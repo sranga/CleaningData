@@ -55,5 +55,5 @@ result$activity <- activityNames[result$activitycode,2]
 result <- result[,c(-1,-2,-4)]
 
 # Write the results to a file
-write.table(result,file="Results.md", quote = FALSE, col.names=FALSE, row.names=FALSE)
+write.table(result,file="Results.txt")
 

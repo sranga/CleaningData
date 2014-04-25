@@ -1,3 +1,4 @@
+
 # Always set the seed for reproducibility
 set.seed(123)
 
@@ -54,6 +55,6 @@ result$activity <- activityNames[result$activitycode,2]
 # Remove the redundant activity/subject columns
 result <- result[,c(-1,-2,-4)]
 
-# Write the results to a file
+# Write the results to a file and create a skeleton code book
 write.table(result,file="Results.txt")
-
+prompt(result,name="CodeBook")

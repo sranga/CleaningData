@@ -84,4 +84,4 @@ This document provides the code book for the result data frame. The variables in
 
 References
 ==========
-* **[Human Activity Recognition Dataset](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
+* [Human Activity Recognition Dataset](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)

@@ -24,14 +24,14 @@ Script Execution
 * The *features.txt* file contains the measurement variable names. These are used as the column names for the 561 measurement variables
 * The subject data is assigned the *subject* column name and the activity data gets the *activitycode* name
 
-## Data Cleanup
+### Data Cleanup
 * Since we are interested in only the **mean** and **standard deviation** measurements, we retrieve a subset of the original data frame with only the following columns:
     * Subject
     * Activity
     * All columns that have "mean()" or "std()" in their names
 * The column names are made tidy by removing any special characters in them and are lower-cased
 
-## Result Computation
+### Result Computation
 * The `aggregate` built-in function is used to calculate the average for each activity/suject on each variable
 * The activity column with numeric values is replaced with a corresponding column that contains descriptive labels for those values
 * The result is written out to a *Results.txt* file using the `write.table` function and a code book skeleton is created using the `prompt` function
